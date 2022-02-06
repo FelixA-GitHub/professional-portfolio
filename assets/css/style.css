@@ -84,11 +84,6 @@ header nav ul li a {
     width: 50%;
 }    
 
-.flex-row {
-    display: flex;
-
-}
-
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -111,16 +106,10 @@ header nav ul li a {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
 }
 
-.step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: #024e76;
-  }
-
-.step-text-inline {
-      display: inline-block;
-
+.inline {
+    display: inline-block;
+    vertical-align: top;
+    padding-inline: 50px;
 }
