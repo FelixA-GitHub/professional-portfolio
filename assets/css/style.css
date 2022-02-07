@@ -31,20 +31,20 @@ header {
 
 header h1 {
     font-size: 48px;
-    flex: 1 30%;
+    flex: 1 5%;
     
 }
 
 header a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--secondary-color);
 }
 
 header img {
     border-radius: 130px;
     height: 200px;
     width: 200px;
-    border: 5px blue solid;
+    border: 5px var(--secondary-color);
     max-width: 100%;
     flex: 1 30%;
     
@@ -52,7 +52,8 @@ header img {
 
 header nav {
     margin: 7px 0;
-    flex: 2 40%;
+    flex: 2 45%;
+    
 }
 
 header nav ul {
@@ -67,8 +68,9 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-decoration: none;
-    color: var(--white);
+    font-weight: bolder;
+    text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 .section-title {
@@ -139,6 +141,7 @@ article:nth-of-type(2) {
     background-image: url(../images/Run-buddy-screenshot.jpg);
     background-size: cover;
     background-position: center;
+    border: 5px solid var(--secondary-color);
   }
 
 .contact-info {
@@ -149,6 +152,7 @@ article:nth-of-type(2) {
     padding-top: 25px;
     font-weight: bold;
     font-size: 20px;
+    text-decoration: underline;
     
 }
 
