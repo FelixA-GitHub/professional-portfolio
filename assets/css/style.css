@@ -9,6 +9,7 @@
     --primary-color: #fce138;
     --secondary-color: #024e76;
     --tertiary-color: #39a6b2;
+    --white: white;
   }
 
 body {
@@ -26,14 +27,17 @@ header {
     background-size: cover;
     background-position: center;
     z-index: 9999;
-   
 }
 
 header h1 {
-    padding-top: 85px;
     font-size: 48px;
-    color: var(--primary-color);
     flex: 1 30%;
+    
+}
+
+header a {
+    text-decoration: none;
+    color: var(--white);
 }
 
 header img {
@@ -48,7 +52,6 @@ header img {
 
 header nav {
     margin: 7px 0;
-    padding-top: 246px;
     flex: 2 40%;
 }
 
@@ -64,14 +67,8 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-}
-
-.intro p {
-    line-height: 1.7;
-    color: var(--tertiary-color);
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
+    text-decoration: none;
+    color: var(--white);
 }
 
 .section-title {
@@ -83,7 +80,7 @@ header nav ul li a {
     margin: 0 auto 35px auto;
     width: 50%;
 }    
-
+/*
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
@@ -94,13 +91,14 @@ header nav ul li a {
     align-items: center;
     justify-content: space-between;
     
-  }
+  }*/
 
-.step h3 {
+h3 {
     flex: 1 30%;
     font-size: 48px;
+    text-align: center;
 } 
-
+/*
 .step-info {
     flex: 2 70%;
     display: flex;
@@ -112,24 +110,34 @@ header nav ul li a {
     display: inline-block;
     vertical-align: top;
     padding-inline: 50px;
-}
+}*/
 
 section {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    
-
-}
-
-article {
-    padding: 10px;
-    margin: 10px;
-    background: aqua;
-    flex: 1 200px;
   }
 
-article:nth-child(3) {
+article {
+    flex: 1 200px;
+    padding: 7px 25px;
+  }
+
+article:nth-of-type(2) {
     flex: 2 200px;
+    display: flex;
+    flex-flow: column;
+  }
+
+article:nth-of-type(2) div:first-child {
+    flex: 1 300px;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(../images/Run-buddy-screenshot.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+article .contact-info {
+    background: none;
 }
