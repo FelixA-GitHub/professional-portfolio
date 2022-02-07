@@ -80,33 +80,7 @@ header nav ul li a {
     text-align: right;
     margin: 0 auto 35px auto;
     width: 50%;
-}    
-/*
-.step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    border-bottom: 1px solid #39a6b2;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    
-  }*/
-
-/*
-.step-info {
-    flex: 2 70%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.inline {
-    display: inline-block;
-    vertical-align: top;
-    padding-inline: 50px;
-}*/
+}  
 
 section {
     display: flex;
@@ -114,7 +88,7 @@ section {
   }
 
 article {
-    flex: 1 100px;
+    flex: 1 200px;
     padding: 15px 45px;
   }
 
@@ -131,8 +105,8 @@ article:nth-of-type(2) {
     flex-flow: column;
   }
 
-.my-apps:nth-of-type(2) div:first-child {
-    flex: 1 200px;
+article:nth-of-type(2) div:first-child {
+    flex: 1 400px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -142,6 +116,20 @@ article:nth-of-type(2) {
     background-position: center;
     border: 5px solid var(--secondary-color);
   }
+
+article div h4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 auto;
+    margin: 5px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+.app-placeholder {
+    width: 200px;
+    height: 200px;
+}
 
 .contact-info {
     display: flex;
@@ -153,17 +141,4 @@ article:nth-of-type(2) {
     font-size: 20px;
     text-decoration: underline;
     
-}
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-    grid-auto-rows: minmax(150px, auto);
-}
-
-.container-img {
-    width: 200px;
-    height: 150px;
-    border: 2px solid var(--secondary-color);
 }
