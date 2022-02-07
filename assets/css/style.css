@@ -6,15 +6,15 @@
 }
 
 :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
+    --primary-color: #ecc19c;
+    --secondary-color: #1e847f;
+    --tertiary-color: #000000;
     --white: white;
   }
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    color: var(--tertiary-color);
+    color: #000000;
 }
 
 header {
@@ -73,10 +73,10 @@ header nav ul li a {
 
 .section-title {
     font-size: 48px;
-    color: var(--secondary-color);
+    color: #1e847f;
     border-bottom: 3px solid;
     padding-bottom: 20px;
-    text-align: center;
+    text-align: right;
     margin: 0 auto 35px auto;
     width: 50%;
 }    
@@ -93,11 +93,6 @@ header nav ul li a {
     
   }*/
 
-h3 {
-    flex: 1 30%;
-    font-size: 48px;
-    text-align: center;
-} 
 /*
 .step-info {
     flex: 2 70%;
@@ -114,12 +109,20 @@ h3 {
 
 section {
     display: flex;
+    background-color: #ecc19c;
   }
 
 article {
-    flex: 1 200px;
-    padding: 7px 25px;
+    flex: 1 100px;
+    padding: 15px 45px;
   }
+
+.my-facts {
+    flex: 1 30%;
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 25px;
+}  
 
 article:nth-of-type(2) {
     flex: 2 200px;
@@ -127,8 +130,8 @@ article:nth-of-type(2) {
     flex-flow: column;
   }
 
-article:nth-of-type(2) div:first-child {
-    flex: 1 300px;
+.my-apps:nth-of-type(2) div:first-child {
+    flex: 1 200px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -138,6 +141,14 @@ article:nth-of-type(2) div:first-child {
     background-position: center;
   }
 
-article .contact-info {
-    background: none;
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    font-weight: bold;
+    font-size: 20px;
+    
 }
+
