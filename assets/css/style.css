@@ -117,15 +117,11 @@ section {
 .div-title {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 80%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-}
-
-.div:not(:last-child) {
-    border-bottom: 1px solid var(--tertiary-color);
 }
 
 .div h3 {
@@ -166,6 +162,73 @@ section {
     text-decoration: underline;
 }
 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 10px;
+
+  }
+
+.app1 {
+    background-image: url(../images/Run-buddy-screenshot.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+
+.app2 {
+    background-image: url(../images/under-construction-1.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+
+.app3 {
+    background-image: url(../images/under-construction-2.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+
+.app4 {
+    background-image: url(../images/under-construction-3.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+
+.app5 {
+    background-image: url(../images/under-construction-4.jpg);
+    background-size: cover;
+    background-position: center;
+}  
+
+.container > .app1 {
+    flex: 100%; 
+    margin-bottom: 10px;
+}
+
+.container > .app2 {
+    flex: 50%; 
+    margin-bottom: 10px;
+}
+
+.container > .app3 {
+    flex: 50%; 
+    margin-bottom: 10px;
+}
+
+.container > .app4 {
+    flex: 50%; 
+    margin-bottom: 10px;
+}
+
+.container > .app5 {
+    flex: 50%; 
+    margin-bottom: 10px;
+}
+
+.two-boxes {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 /** {
     box-sizing: border-box;
