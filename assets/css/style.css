@@ -9,7 +9,6 @@
     --primary-color: #ecc19c;
     --secondary-color: #1e847f;
     --tertiary-color: #000000;
-    --white: white;
   }
 
 body {
@@ -156,3 +155,15 @@ article:nth-of-type(2) {
     
 }
 
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.container-img {
+    width: 200px;
+    height: 150px;
+    border: 2px solid var(--secondary-color);
+}
