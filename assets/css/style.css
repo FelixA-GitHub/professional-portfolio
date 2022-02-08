@@ -72,9 +72,6 @@ header nav ul li a:hover {
     text-shadow: none;
 } 
 
-section {
-    padding: 60px;
-}
 
 .hero {
     background-image: url(../images/space.jpg);
@@ -115,20 +112,22 @@ section {
 }
 
 .div-title {
-    margin: 50px auto;
     padding-bottom: 50px;
-    width: 50%;
+    width: 35%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    
 }
 
-.div h3 {
+.div-title h3 {
     color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
+    margin-left: 50px;
 }
+
 .div-img {
     flex: 1 12%;
     margin-right: 20px;
@@ -165,7 +164,7 @@ section {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 50%;
+    width: 65%;
     padding: 10px;
 
   }
@@ -174,6 +173,7 @@ section {
     background-image: url(../images/Run-buddy-screenshot.jpg);
     background-size: cover;
     background-position: center;
+    height: 300px;
 }  
 
 .app2 {
@@ -228,6 +228,7 @@ section {
 .two-boxes {
     display: flex;
     flex-wrap: wrap;
+    padding: 7px 15px;
 }
 
 /** {
