@@ -190,7 +190,7 @@ header nav ul li a:hover {
 
 .app4 {
     background-image: url(../images/under-construction-3.jpg);
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }  
 
@@ -229,4 +229,8 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     padding: 7px 15px;
+}
+
+.item-div {
+    height: 30vh;
 }
