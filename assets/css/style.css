@@ -97,7 +97,7 @@ header nav ul li a:hover {
     font-size: 18px;
     line-height: 1.2;
   }
-  .hero-cta h2 {
+.hero-cta h2 {
     font-weight: bold;
     font-style: italic;
     font-size: 60px;
@@ -119,7 +119,6 @@ header nav ul li a:hover {
 }
 
 .div-title {
-    width: 35%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -142,7 +141,6 @@ header nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex: 2 70%;
 }
 
 .container .container-paragraph {
@@ -203,6 +201,19 @@ header nav ul li a:hover {
     justify-content: space-around;
     list-style: none;
     text-decoration: underline;
+    color: black;
+}
+
+.contact-row li {
+    color: black;
+    text-align: justify;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 600;
+    line-height: 23px;
+    margin: 0 20px;
 }
 
 .container {
@@ -236,7 +247,15 @@ header nav ul li a:hover {
     justify-content: flex-end;
 }
 
-.div-title .shift-right {
-    margin-left: 100%;
+.shift-right {
     text-align: right;
+    margin: 0 auto;;
+}
+
+#contact-me .div-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 55px;
 }
