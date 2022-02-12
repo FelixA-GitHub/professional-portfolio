@@ -76,6 +76,9 @@ header nav ul li a:hover {
     text-shadow: none;
 } 
 
+header .avatar-img {
+    margin-right: 350px;
+}
 
 .flex-row {
     display: flex;
