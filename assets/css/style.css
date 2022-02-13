@@ -395,6 +395,31 @@ header .avatar-img {
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
     
+    .div-title h3 {
+        color: var(--secondary-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 44px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 700;
+        flex: 1 30%;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .two-boxes {
+        display: flex;
+        flex-wrap: inherit;
+        padding: 7px 55px;
+        justify-content: space-between;
+    }
+    
     .contact-row {
         display: flex;
         flex-wrap: wrap;
