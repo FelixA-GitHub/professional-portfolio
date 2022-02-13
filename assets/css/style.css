@@ -266,13 +266,7 @@ header .avatar-img {
         margin: 50px;
     }
 
-    #contact-me .div-title .laptop-size {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-       
-    }
+
 
     .div-title h3 {
         color: var(--secondary-color);
@@ -294,7 +288,7 @@ header .avatar-img {
 
     .two-boxes {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: inherit;
         padding: 7px 55px;
         justify-content: space-between;
     }
@@ -375,7 +369,17 @@ header .avatar-img {
         margin-left: 6px;
     }
 
-    .contact-row li {
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        list-style: none;
+        text-decoration: underline;
+        color: black;
+        margin-left: 85px;
+    }
+
+    .contact-row p {
         color: black;
         text-align: center;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -383,8 +387,6 @@ header .avatar-img {
         font-style: normal;
         font-variant: normal;
         font-weight: 600;
-        line-height: 23px;
-        margin-left: 30px;
         
     }
 
