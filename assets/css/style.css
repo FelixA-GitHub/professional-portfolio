@@ -477,6 +477,53 @@ header .avatar-img {
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
-    
+    .avatar-img img {
+        margin: 0 20px 0 20px;
+    }
+
+    header nav ul li a {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .two-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7px 15px;
+        justify-content: space-evenly;
+        position: relative;
+        right: 1rem;
+    }
+
+    #work .two-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7px 15px;
+        justify-content: space-evenly;
+        position: relative;
+        right: 1rem;
+    }
+
+    .div-title h3 {
+        color: var(--secondary-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 46px;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 0%;
+        margin-left: 2rem;
+    }
+
+    .container .container-paragraph p {
+        color: black;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0.5rem 0;
+        margin-left: 2rem;
+    }
+
+
 }
+
