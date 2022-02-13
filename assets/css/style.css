@@ -1,0 +1,589 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --primary-color: #ecc19c;
+    --secondary-color: #1e847f;
+    
+  }
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #EBF2F4;
+}
+
+/* apply styles to header */
+header {
+    padding: 20px 35px;
+    background-color: var(--tertiary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* in case i want to sticky in the future */
+    /* position: -webkit-sticky;
+    position: sticky; */
+    top: 0;
+    background-image: url(../images/space.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
+}
+
+header h1 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 36px;
+    font-weight: 600; 
+    line-height: 23px; 
+    color: var(--primary-color);
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+header nav ul li a:hover {
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 15px;
+    text-shadow: none;
+} 
+
+header .avatar-img {
+    margin-right: 350px;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.div-title h3 {
+    color: var(--secondary-color);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 55px;  
+    font-weight: 700;
+    flex: 1 30%;
+    margin-right: 90px;
+}
+
+.div-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.container .container-paragraph {
+    color: black;
+    text-align: justify;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 50px 0 7px; 
+}
+
+.div-text-main {
+    border: 5px solid var(--secondary-color);
+    height: 80px;
+    width: 167px;
+    background-color: var(--secondary-color);
+    color: black;
+    position: absolute;
+    margin-top: 18%;
+    margin-left: 6px;
+    
+}
+
+.div-text-sm {
+    border: 5px solid var(--secondary-color);
+    height: 80px;
+    width: 167px;
+    background-color: var(--secondary-color);
+    color: black;
+    position: absolute;
+    margin-top: 6%;
+    margin-left: 6px;
+}
+
+.div-text-main h3, .div-text-sm h3 {
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+
+}    
+
+.div-text-main h4, .div-text-sm h4 {
+    font-size: 12px;
+    font-weight: lighter;
+    text-align: center;
+    
+}
+
+.contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-decoration: underline;
+    color: black;
+}
+
+.contact-row p {
+    color: black;
+    text-align: justify;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 23px;
+    margin: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+}
+
+.main-app .div-img img {
+    display: flex;
+    width: 852px;
+    height: 400px;
+    border: 5px solid var(--secondary-color);
+    margin-left: 6px;
+    margin-bottom: 5px;
+}  
+
+.small-apps .div-img img {
+    display: flex;
+    justify-content: space-around;
+    width: 421px;
+    height: 200px;
+    border: 5px solid var(--secondary-color);
+    margin: 5px;
+}
+
+.two-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 7px 20px;
+    justify-content: flex-end;
+}
+
+#contact-me .div-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-right: 55px;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1024px) {
+    header {
+        padding: 20px 35px;
+        background-color: var(--tertiary-color);
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        /* in case i want to sticky in the future */
+        /* position: -webkit-sticky;
+        position: sticky; */
+        top: 0;
+        background-image: url(../images/space.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-position: 80%;
+    
+    }
+
+    header h1 {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 44px;
+        font-style: normal;
+        font-variant: normal;
+        font-weight: 600;
+        line-height: 23px;
+        color: var(--primary-color);
+        margin: 10px;
+        text-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    }
+
+    header nav ul li a {
+        padding: 10px 15px;
+        font-weight: normal;
+        font-size: 2.00vw;
+        color: var(--primary-color);
+        text-decoration: none;
+        margin: 50px;
+    }
+
+
+
+    .div-title h3 {
+        color: var(--secondary-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+        flex: 1 30%;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+
+    .two-boxes {
+        display: flex;
+        flex-wrap: inherit;
+        padding: 7px 55px;
+        justify-content: space-between;
+    }
+
+    .container .container-paragraph {
+        color: black;
+        text-align: justify;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 23px;
+        
+        
+    }
+
+    .main-app .div-img img {
+        display: flex;
+        width: 545px;
+        height: 400px;
+        border: 5px solid var(--secondary-color);
+        
+    }
+
+    .div-text-main {
+        border: 5px solid var(--secondary-color);
+        height: 100px;
+        width: 167px;
+        background-color: var(--secondary-color);
+        color: black;
+        position: absolute;
+        margin-top: 18%;
+        margin-left: 6px;
+    }
+
+    .div-text-sm {
+        border: 5px solid var(--secondary-color);
+        height: 100px;
+        width: 167px;
+        background-color: var(--secondary-color);
+        color: black;
+        position: absolute;
+        margin-top: 6%;
+        margin-left: 6px;
+    }
+
+    .small-apps .div-img img {
+        display: flex;
+        justify-content: space-around;
+        width: 545px;
+        height: 300px;
+        border: 5px solid var(--secondary-color);
+        margin: 5px;
+    }
+
+    .div-text-main h3, .div-text-sm h3 {
+        font-size: 25px;
+        font-weight: bolder;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .div-text-main h4, .div-text-sm h4 {
+        font-size: 16px;
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    .div-text-sm {
+        border: 5px solid var(--secondary-color);
+        height: 100px;
+        width: 167px;
+        background-color: var(--secondary-color);
+        color: black;
+        position: absolute;
+        margin-top: 15%;
+        margin-left: 6px;
+    }
+
+    .contact-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-decoration: underline;
+        color: black;
+        margin-left: 9vw;
+    }
+
+    .contact-row p {
+        color: black;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        
+    }
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+    
+    header nav ul {
+        justify-content: space-around;
+        width: max-content;
+    }
+
+    header nav ul li a {
+        padding: 0.4rem 0.6rem;
+        font-size: 22px;
+    }
+
+    .avatar-img {
+        margin-left: 22rem;
+        padding: 0.7rem;
+    }
+
+    .container .container-paragraph {
+        color: black;
+        text-align: justify;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        width: -webkit-fill-available;
+        padding: 2rem 0;
+    }
+
+    .main-app .div-img img {
+        display: flex;
+        width: 450px;
+        height: 400px;
+        border: 5px solid var(--secondary-color);
+        
+    }
+
+    .small-apps .div-img img {
+        display: flex;
+        justify-content: space-around;
+        width: 450px;
+        height: 300px;
+        border: 5px solid var(--secondary-color);
+        margin: 5px;
+    }
+
+    .div-title h3 {
+        color: var(--secondary-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 44px;
+        font-weight: 700;
+
+    }
+
+    #work .div-title h3 {
+        position: absolute;
+        top: 51rem;
+        left: 3.3rem;
+    }
+
+    .div-text-main {
+        border: 5px solid var(--secondary-color);
+        height: 100px;
+        width: 167px;
+        background-color: var(--secondary-color);
+        color: black;
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 6px;
+    }
+
+    #contact-me .two-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7px 55px;
+        justify-content: space-around;
+    }
+    
+    #contact-me .contact-row {
+        width: 0.5rem;
+        margin: auto;
+    }
+
+    #contact-me .contact-row p {
+        color: black;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 0.1rem;
+        line-height: 2rem;
+        
+    } 
+
+    #contact-me div {
+        width: -webkit-fill-available;
+    }
+     
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    .avatar-img img {
+        margin: 0 20px 0 20px;
+    }
+
+    header nav ul li a {
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .two-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7px 15px;
+        justify-content: space-evenly;
+        position: relative;
+        right: 1rem;
+    }
+
+
+    .div-title h3 {
+        color: var(--secondary-color);
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 42px;
+        font-weight: 700;
+        text-align: center;
+        margin-right: 0%;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+
+    .container .container-paragraph p {
+        color: black;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0.5rem 0;
+        margin-left: 2rem;
+    }
+
+    .main-app .div-img img {
+        display: flex;
+        width: 450px;
+        height: 400px;
+        border: 5px solid var(--secondary-color);
+        position: relative;
+        right: 7rem;
+        top: 5rem;
+    }
+
+    .small-apps .div-img img {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 450px;
+        height: 300px;
+        border: 5px solid var(--secondary-color);
+        margin: 5px;
+        position: relative;
+        right: 7rem;
+        top: 5rem;
+    }
+
+    #work .two-boxes {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 7px 15px;
+        justify-content: space-evenly;
+        position: relative;
+        right: 1rem;
+    }
+
+    #work .div-title h3 {
+        position: relative;
+        top: -51rem;
+        left: 12rem;
+    }
+
+    .div-text-main {
+        border: 5px solid var(--secondary-color);
+        height: 100px;
+        width: 167px;
+        background-color: var(--secondary-color);
+        color: black;
+        position: absolute;
+        margin-top: 20%;
+        margin-left: 6px;
+    }
+    
+    #contact-me .div-title h3 {
+        position: relative;
+        top: 4rem;
+        left: 0.6rem;
+
+    }
+
+    #contact-me .contact-row p {
+        color: black;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        padding: 0.1rem;
+        line-height: 3rem;
+        position: relative;
+        top: 5rem;
+        left: 3rem;
+
+    }
+}
